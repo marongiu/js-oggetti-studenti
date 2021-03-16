@@ -32,21 +32,21 @@ $(document).ready(function() {
   var studenti = [
     {
       // studente 1
-      nome: 'valerio',
-      cognome: 'rossi',
-      eta: 25,
+      nome: 'Nome:' + ' Valerio',
+      cognome: 'Cognome:' + ' Rossi',
+      eta: 'Età: ' + 25,
     },
     {
       // studente 2
-      nome: 'anna',
-      cognome: 'rossi',
-      eta: 18,
+      nome:'Nome:' + ' Anna',
+      cognome: 'Cognome:' + ' Rossi',
+      eta:'Età: ' +  18,
     },
     {
       // studente 3
-      nome: 'marco',
-      cognome: 'esposito',
-      eta: 29,
+      nome:'Nome:' + ' Marco',
+      cognome: 'Cognome:' + ' Esposito',
+      eta: 'Età: ' +  29,
     }
   ]
 
@@ -72,13 +72,13 @@ $(document).ready(function() {
     var age = $('input#eta').val();
 // Creo una nuova variabile dove inserire i nuovi studenti
     var studentiAggiunti = {
-      nome: name,
-      cognome: surname,
-      eta: age,
+      nome: 'Nome: ' + name,
+      cognome:'Cognome: ' +surname,
+      eta: 'Età: ' + age,
     }
     // Ciclo per ottenere le proprietà e le stampo
     for (var variable in studentiAggiunti) {
-      $('tr#nuovi').append( '<td>' + studentiAggiunti[variable] + '</td>');
+      $('.nuovi').append( '<li>' + studentiAggiunti[variable] + '</li>');
     }
   });
 
