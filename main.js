@@ -62,5 +62,24 @@ $(document).ready(function() {
   // -------------------------------------------------- //
   // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto
 
+  // Seleziono il bottone nella pagina
+  $('button').click(function(event) {
+    // Seleziono input name
+    var name = $('input#name').val();
+    // Seleziono input cognome
+    var surname = $('input#cognome').val();
+    // Seleziono input eta
+    var age = $('input#eta').val();
+// Creo una nuova variabile dove inserire i nuovi studenti
+    var studentiAggiunti = {
+      nome: name,
+      cognome: surname,
+      eta: age,
+    }
+    // Ciclo per ottenere le proprietà e le stampo
+    for (var variable in studentiAggiunti) {
+      $('tr#nuovi').append( '<td>' + studentiAggiunti[variable] + '</td>');
+    }
+  });
 
 });
