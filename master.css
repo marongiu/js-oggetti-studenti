@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.col-12 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+table {
+  margin: 10px auto;
+}
+
+table tr th {
+  padding: 10px;
+}
+
+th{
+  border: 1px solid black;
+}
+
+td {
+  text-align: center;
+}
