@@ -56,10 +56,11 @@ $(document).ready(function() {
     // dopo aver fatto il ciclo for creo un ciclo for in
     for (var keys in studenti[i]) {
       //stampo
-      console.log(studenti[i][keys]);
+        $('#studenti').append( '<li>' + studenti[i][keys] + '</li>');
     }
   }
   // -------------------------------------------------- //
   // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto
+
 
 });
