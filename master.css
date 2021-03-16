@@ -24,6 +24,9 @@ h1 {
 
 table tr th {
   padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #eeee;
 }
 
 th{
@@ -31,7 +34,9 @@ th{
 }
 
 td {
+  padding: 5px 0;
   text-align: center;
+  border: 1px solid #ffff;
 }
 
 
@@ -42,7 +47,7 @@ ul {
 
 ul li {
   list-style: none;
-  padding: 3px 0;
+  padding: 5px 0;
   color: #ffff;
   font-weight: bold;
 }

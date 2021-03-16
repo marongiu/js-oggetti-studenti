@@ -50,7 +50,6 @@ $(document).ready(function() {
     }
   ]
 
-  console.log(studenti);
   // creo un ciclo for per stampare le tre array
   for (var i = 0; i < studenti.length; i++) {
     // dopo aver fatto il ciclo for creo un ciclo for in
@@ -76,6 +75,9 @@ $(document).ready(function() {
       cognome:'Cognome: ' +surname,
       eta: 'Età: ' + age,
     }
+    // Pusho nell'array
+    studenti.push(studentiAggiunti);
+      console.log(studenti);
     // Ciclo per ottenere le proprietà e le stampo
     for (var variable in studentiAggiunti) {
       $('.nuovi').append( '<li>' + studentiAggiunti[variable] + '</li>');
