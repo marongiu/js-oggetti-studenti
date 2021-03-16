@@ -12,9 +12,9 @@ $(document).ready(function() {
 
   var studente = {
     // nome
-    nome: 'andrea',
+    nome: 'Andrea',
     // cognome
-    cognome: 'marongiu',
+    cognome: 'Marongiu',
     // eta
     eta: 20,
   }

@@ -27,7 +27,7 @@ table tr th {
 }
 
 th{
-  border: 1px solid black;
+  border: 5px solid #ffff;
 }
 
 td {
@@ -60,7 +60,7 @@ ul li {
   margin: 0 10px;
   outline: none;
   border: none;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 button {
